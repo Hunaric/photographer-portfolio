@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photographer website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        :root {
+            --font-primary: "Manrope";
+
+            --color-one: #1c1c21;
+            --color-two: #0e0e10;
+            --color-three: #2f2f32;
+
+        }
+
+        body {
+            font-family: var(--font-primary);
+            font-weight: medium;
+        }
+
+        .bg-one {background-color: var(--color-one);}
+        .bg-two {background-color: var(--color-two);}
+        .bg-three {background-color: var(--color-three);}
+
+        .color-one {color: var(--color-one);}
+        .color-two {color: var(--color-two);}
+        .color-three {color: var(--color-three);}
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="text-white font-light bg-one">
     <main>
-        <header>
-            <nav>
-                <div>DAMIEN</div>
-                <div>
-                    <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Portfolio</li>
-                        <li>Services</li>
-                    </ul>
-                </div>
-                <div>Contact Me</div>
+        <header class="px-[62px]">
+            <nav class="flex flex-row justify-between items-center border-gray-500/50 border-x-[1px] px-[18px]">
+                <div class="text-white font-bold text-[22px]">DAMIEN</div>
+                <ul class="flex flex-row pt-[20px]">
+                    <li class="rounded-tl-lg border-l-[1px] border-t-[1px] border-gray-500/50 bg-gray-50/5 w-[119px] h-[69px] text-[18px] flex justify-center items-center">Home</li>
+                    <li class="border-x-[1px] border-gray-500/50  border-t-[1px] w-[119px] h-[69px] text-[18px] flex justify-center items-center">About Me</li>
+                    <li class="border-r-[1px]  border-t-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center">Portfolio</li>
+                    <li class="rounded-tr-lg border-t-[1px]  border-r-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center">Services</li>
+                </ul>
+                <div class="flex justify-center items-center w-[118px] h-[49px] border-[1px] border-gray-500/50 bg-gray-50/10 rounded-lg">Contact Me</div>
             </nav>
         </header>
         <!-- Hero section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <div>STUNNING PHOTOGRAPY BY</div>
-                        <div>DAMIEN BRAUN</div>
+        <section class="border-t-[1px] border-gray-500/50 mb-[150px]">
+            <div class="flex flex-col">
+                <div class="flex flex-row relative justify-between px-[80px] py-[60px]">
+                    <div class="h-full">
+                        <div class="text-[25px]">STUNNING PHOTOGRAPY BY</div>
+                        <div class="font-bold text-[82px]">DAMIEN BRAUN</div>
                     </div>
-                    <div>svg</div>
-                    <div>
-                        <div>LET'S WORK TOGETHER</div>
+                    <div class="">svg</div>
+                    <div class="h-full">
+                        <div class="text-[66px] gap-4">LET'S 
+                            <p>WORK TOGETHER</p>
+                        </div>
                     </div>
                 </div>
-                <div>
+                <div class="flex flex-col border-t-[1px] border-gray-500/50">
                     <div>
-                        <ul>
+                        <ul class="flex flex-row justify-between items-center bg-two">
                             <li>EVENT PHOTOGRAPHY</li>
                             <li>COMMERCIAL PHOTOGRAPHY</li>
                             <li>PRODUCT PHOTOGRAPHY</li>
@@ -46,7 +73,7 @@
                             <li>PORTRAIT PHOTOGRAPHY</li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="px-[80px] flex justify-center items-center">
                         Images
                     </div>
                 </div>
@@ -55,14 +82,14 @@
         <!-- End Hero section -->
 
         <!-- About section -->
-        <section>
+        <section class="px-[80px]">
             <div>
-                <div>
-                    <div>
-                        <div>About</div>
-                        <div>I AM DAMIEN</div>
+                <div class="pb-[40px] flex flex-row justify-between items-center border-b-[1px] border-gray-500/30">
+                    <div class="flex flex-col justify-start">
+                        <div class="text-[22px]">About</div>
+                        <div class="text-[66px] font-bold">I AM DAMIEN</div>
                     </div>
-                    <div>Know More</div>
+                    <div class="w-[130px] h-[49px] bg-three flex justify-center items-center rounded-lg">Know More -></div>
                 </div>
                 <div>
                     <div>Image</div>
