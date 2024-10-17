@@ -13,6 +13,7 @@
             --color-one: #1c1c21;
             --color-two: #0e0e10;
             --color-three: #2f2f32;
+            --color-four: #797c86;
 
         }
 
@@ -24,10 +25,12 @@
         .bg-one {background-color: var(--color-one);}
         .bg-two {background-color: var(--color-two);}
         .bg-three {background-color: var(--color-three);}
+        .bg-four {background-color: var(--color-four);}
 
         .color-one {color: var(--color-one);}
         .color-two {color: var(--color-two);}
         .color-three {color: var(--color-three);}
+        .color-four {color: var(--color-four);}
 
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -46,6 +49,7 @@
                 <div class="flex justify-center items-center w-[118px] h-[49px] border-[1px] border-gray-500/50 bg-gray-50/10 rounded-lg">Contact Me</div>
             </nav>
         </header>
+        
         <!-- Hero section -->
         <section class="border-t-[1px] border-gray-500/50 mb-[150px]">
             <div class="flex flex-col">
@@ -82,18 +86,18 @@
         <!-- End Hero section -->
 
         <!-- About section -->
-        <section class="px-[80px]">
-            <div>
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[50px]">
                 <div class="pb-[40px] flex flex-row justify-between items-center border-b-[1px] border-gray-500/30">
                     <div class="flex flex-col justify-start">
-                        <div class="text-[22px]">About</div>
-                        <div class="text-[66px] font-bold">I AM DAMIEN</div>
+                        <div class="text-[16px] color-four font-semibold">ABOUT</div>
+                        <div class="text-[48px] font-semibold">I AM DAMIEN</div>
                     </div>
                     <div class="w-[130px] h-[49px] bg-three flex justify-center items-center rounded-lg">Know More -></div>
                 </div>
-                <div class="flex flex-row gap-[20px] border-2">
+                <div class="flex flex-row gap-[20px]">
                     <div class="w-1/2 border-2">Image</div>
-                    <div class="w-1/2 my-[33px] flex flex-col justify-center border-2 rounded-[20px] h-[519px]">
+                    <div class="w-1/2 my-[33px] flex flex-col justify-center border-[1px] border-gray-500/30 rounded-[20px] h-[519px]">
                         <div class="flex flex-col justify-center px-[30px] py-[30px] border-b-[1px] border-gray-500/30 gap-[16px]">
                             <div class="text-[33px]">Introduction</div>
                             <div class="text-[16px]">My journey as a photographer has been a lifelong quest to capture the extraordinary in the ordinary, to freeze fleeting moments in time, and to share the world's beauty as I see it. Based in the enchanting landscapes of the USA, I find inspiration in every corner of this diverse and vibrant country. Join me as we embark on a visual odyssey, where each photograph tells a story, and every frame is a piece of my heart.</div>
@@ -110,15 +114,15 @@
                                     <div class="text-[18px]">+00 000000000</div>
                                 </div>
                             </div>
-                            <div class="flex flex-row gap-[50px]">
+                            <div class="flex flex-row gap-[50px] w-full items-center">
                                 <div class="flex flex-row gap-[10px]">
                                     <div>Facebook</div>
                                     <div>X</div>
                                     <div>LinkedIn</div>
                                 </div>
-                                <div class="flex flex-row gap-[16px]">
-                                    <div>Let's Work</div>
-                                    <div>Download CV</div>
+                                <div class="flex flex-row gap-[16px] justify-between items-center">
+                                    <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">Let's Work</div>
+                                    <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">Download CV</div>
                                 </div>
                             </div>
                         </div>
@@ -129,44 +133,44 @@
         <!-- End About section -->
 
         <!-- Services section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <div>SERVICES</div>
-                        <div>MY PHOTOGRAPHY SERVICES</div>
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[60px]">
+                <div class="flex flex-row justify-between items-center">
+                    <div class="flex flex-col">
+                        <div class="text-[16px] font-semibold color-four">SERVICES</div>
+                        <div class="font-semibold text-[48px]">MY PHOTOGRAPHY SERVICES</div>
                     </div>
-                    <div>
-                        <div>
-                            <div><</div>
-                            <div>></div>
+                    <div class="flex flex-row gap-[20px]">
+                        <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                            <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&lt;</div>
+                            <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&gt;</div>
                         </div>
-                        <div>View All Servies -></div>
+                        <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">View All Services -></div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <div>EVENTS</div>
-                            <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, dolor dolores corrupti hic voluptatum tenetur eveniet aliquam corporis error odit ducimus consequatur, sequi quos, obcaecati laudantium ipsa commodi id sunt?</div>
+                <div class="flex flex-row w-full gap-[40px]">
+                    <div class="w-1/2 flex flex-col gap-[40px]">
+                        <div class="flex flex-col justify-start gap-[16px]">
+                            <div class="text-[34px] color-four font-semibold">EVENTS</div>
+                            <div class="text-[16px] color-four w-[620px] text-justify">Our event photography service is dedicated to capturing the magic of your special occasions. Whether it's a wedding, corporate event, or milestone celebration, we're there to document every heartfelt moment. We blend into the background, ensuring natural and candid shots that reflect the emotions of the day.</div>
                         </div>
-                        <div>
-                            <div>Service Highlights</div>
+                        <div class="flex flex-col gap-[16px]">
+                            <div class="font-medium text-[16px]">Service Highlights</div>
                             <div>
-                                <ul>
-                                    <li>
+                                <ul class="flex flex-col gap-[10px]">
+                                    <li class="w-[620px] border-[1px] border-gray-500/30 px-[10px] py-[16px] rounded-[10px] flex flex-row justify-start items-center gap-[10px]">
                                         <div>svg</div>
                                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                                     </li>
-                                    <li>
+                                    <li class="w-[620px] border-[1px] border-gray-500/30 px-[10px] py-[16px] rounded-[10px] flex flex-row justify-start items-center gap-[10px]">
                                         <div>svg</div>
                                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                                     </li>
-                                    <li>
+                                    <li class="w-[620px] border-[1px] border-gray-500/30 px-[10px] py-[16px] rounded-[10px] flex flex-row justify-start items-center gap-[10px]">
                                         <div>svg</div>
                                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                                     </li>
-                                    <li>
+                                    <li class="w-[620px] border-[1px] border-gray-500/30 px-[10px] py-[16px] rounded-[10px] flex flex-row justify-start items-center gap-[10px]">
                                         <div>svg</div>
                                         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
                                     </li>
@@ -174,26 +178,26 @@
                             </div>
                         </div>
                     </div>
-                    <div>Images</div>
+                    <div class="w-1/2">Images</div>
                 </div>
             </div>
         </section>
         <!-- End Services section -->
 
         <!-- Portfolio section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <div>PORTFOLIO</div>
-                        <div>EXPLORE MY PHOTOGRAPHY WORK.</div>
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[60px]">
+                <div class="flex flex-row justify-between items-center">
+                    <div class="flex flex-col">
+                        <div class="text-[16px] font-semibold color-four">PORTFOLIO</div>
+                        <div class="font-semibold text-[48px]">EXPLORE MY PHOTOGRAPHY WORK.</div>
                     </div>
-                    <div>
-                        <div>
-                            <div><</div>
-                            <div>></div>
+                    <div class="flex flex-row gap-[20px]">
+                        <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                            <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&lt;</div>
+                            <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&gt;</div>
                         </div>
-                        <div>View All Work -></div>
+                        <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">View All Works -></div>
                     </div>
                 </div>
                 <div>
