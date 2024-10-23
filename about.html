@@ -3,258 +3,342 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photographer website - About</title>
+    <title>Photographer website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        :root {
+            --font-primary: "Manrope";
+
+            --color-primary: #070708;
+            --color-one: #1c1c21; /* Dark 03 */
+            --color-two: #0e0e10; /* Dark 06 */
+            --color-three: #2f2f32;
+            --color-four: #797c86; /* Gray 07 */
+
+        }
+
+        body {
+            font-family: var(--font-primary);
+            font-weight: medium;
+        }
+
+        .bg-primary {background-color: var(--color-primary);}
+        .bg-one {background-color: var(--color-one);}
+        .bg-two {background-color: var(--color-two);}
+        .bg-three {background-color: var(--color-three);}
+        .bg-four {background-color: var(--color-four);}
+
+        .color-one {color: var(--color-one);}
+        .color-two {color: var(--color-two);}
+        .color-three {color: var(--color-three);}
+        .color-four {color: var(--color-four);}
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="text-white font-light bg-primary">
     <main>
-        <!-- Header section -->
-        <header>
-            <nav>
-                <div>DAMIEN</div>
-                <div>
-                    <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Portfolio</li>
-                        <li>Services</li>
-                    </ul>
+        <header class="px-[62px]">
+            <nav class="flex flex-row justify-between items-center border-gray-500/50 border-x-[1px] px-[18px]">
+                <div class="text-white font-bold text-[22px]">DAMIEN</div>
+                <ul class="flex flex-row pt-[20px]">
+                    <li class="rounded-tl-lg border-l-[1px] border-t-[1px] border-gray-500/50 bg-gray-50/5 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="border-x-[1px] border-gray-500/50  border-t-[1px] w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium color-four">
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li class="border-r-[1px]  border-t-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium color-four">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="rounded-tr-lg border-t-[1px]  border-r-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium color-four">
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+                <div class="flex justify-center items-center w-[118px] h-[49px] border-[1px] border-gray-500/50 bg-gray-50/10 rounded-lg font-medium">
+                    <a href="contact.html">Contact Me</a>
                 </div>
-                <div>Contact Me</div>
             </nav>
         </header>
-        <!-- End Header section -->
-
+        
         <!-- About section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <div>
-                            <div>ABOUT</div>
-                            <div>ABOUT DAMIEN BRAUN</div>
-                        </div>
-                        <div>Imgae</div>
+        <section class="border-t-[1px] border-gray-500/50 px-[80px] mb-[150px] pt-[100px]">
+            <div class="flex flex-col">
+                <div class="pb-[40px] flex flex-row justify-between items-center">
+                    <div class="flex flex-col justify-start">
+                        <div class="text-[16px] color-four font-semibold">ABOUT</div>
+                        <div class="text-[48px] font-semibold">ABOUT DAMIEN BRAUN</div>
                     </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <div>
-                                    <div>15+</div>
-                                    <div>Years in business</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div>15+</div>
-                                    <div>Years in business</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div>15+</div>
-                                    <div>Years in business</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div>15+</div>
-                                    <div>Years in business</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div>15+</div>
-                                    <div>Years in business</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <div>15+</div>
-                                    <div>Years in business</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        Image
+                    <div class="w-[130px] h-[49px] bg-three flex justify-center items-center rounded-lg">
+
                     </div>
                 </div>
-                <div>
-                    <div>
-                        MY BIOGRAPHY
+                <div class="flex flex-col py-[80px] gap-4 border-b-[1px] border-gray-500/50">
+                    <ul class="flex flex-row justify-between">
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[204.83px] h-[107px] py-[20px] px-[24px]">
+                            <div class="font-semibold text-[34px]">500+</div>
+                            <div class="text-[14px]">Happy Clients</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[204.83px] h-[107px] py-[20px] px-[24px]">
+                            <div class="font-semibold text-[34px]">500+</div>
+                            <div class="text-[14px]">Happy Clients</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[204.83px] h-[107px] py-[20px] px-[24px]">
+                            <div class="font-semibold text-[34px]">500+</div>
+                            <div class="text-[14px]">Happy Clients</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[204.83px] h-[107px] py-[20px] px-[24px]">
+                            <div class="font-semibold text-[34px]">500+</div>
+                            <div class="text-[14px]">Happy Clients</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[204.83px] h-[107px] py-[20px] px-[24px]">
+                            <div class="font-semibold text-[34px]">500+</div>
+                            <div class="text-[14px]">Happy Clients</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[204.83px] h-[107px] py-[20px] px-[24px]">
+                            <div class="font-semibold text-[34px]">500+</div>
+                            <div class="text-[14px]">Happy Clients</div>
+                        </li>
+                    </ul>
+                    <div class="px-[80px] flex justify-center items-center h-[424px]">
+                        <img src="images/Images Container.png" alt="">
                     </div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis numquam a molestias suscipit aspernatur vel eligendi fuga maiores, nihil tempora eos inventore iusto consequatur quaerat quidem? Maiores, dolorum molestiae.</div>
+                </div>
+                <div class="py-[60px] flex flex-col gap-[30px] border-b-[1px] border-gray-500/50">
+                    <div class="font-semibold color-four text-[34px]">MY BIOGRAPHY</div>
+                    <div class="text-[16px] color-four">Damien Braun's love affair with photography began at a young age, nurtured by the captivating landscapes and vibrant cultures surrounding her in the heart of the USA. Her passion for storytelling through imagery led her to embark on a photography journey that has spanned over 15 years. <br>
+                    Driven by an insatiable curiosity to explore the beauty in everyday moments, Damien has honed her craft meticulously. Her background in digital media provided her with a solid foundation, but it's her keen eye for detail and an innate ability to capture raw emotions that truly set her apart. <br>
+                    Damien's journey is more than just taking pictures; it's about capturing the essence of the human spirit, the fleeting magic of nature, and the emotions that define our lives. With each click of her camera, she weaves stories that transcend time and space.</div>
                 </div>
             </div>
         </section>
         <!-- End About section -->
 
         <!-- Journey section -->
-        <section>
-            <div>
-                <div>
-                    <div>JOURNEY</div>
-                    <div>DAMIEN'S JOURNEY - A TIMELINE</div>
+        
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[50px]">
+                <div class="pb-[40px] flex flex-row justify-between items-center border-b-[1px] border-gray-500/30">
+                    <div class="flex flex-col justify-start">
+                        <div class="text-[16px] color-four font-semibold">JOURNEY</div>
+                        <div class="text-[48px] font-semibold">DAMIEN'S JOURNEY - A TIMELINE</div>
+                    </div>
                 </div>
-                <div>
-                    <div>
-                        <div>YEAR - 2005</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ab libero? Commodi debitis natus ab omnis quam consequuntur asperiores.</div>
-                    </div>
-                    <div>
-                        <div>YEAR - 2005</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ab libero? Commodi debitis natus ab omnis quam consequuntur asperiores.</div>
-                    </div>
-                    <div>
-                        <div>YEAR - 2005</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ab libero? Commodi debitis natus ab omnis quam consequuntur asperiores.</div>
-                    </div>
-                    <div>
-                        <div>YEAR - 2005</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ab libero? Commodi debitis natus ab omnis quam consequuntur asperiores.</div>
-                    </div>
-                    <div>
-                        <div>YEAR - 2005</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ab libero? Commodi debitis natus ab omnis quam consequuntur asperiores.</div>
-                    </div>
-                    <div>
-                        <div>YEAR - 2005</div>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, ab libero? Commodi debitis natus ab omnis quam consequuntur asperiores.</div>
-                    </div>
+                <div class="flex flex-col gap-[20px] justify-center items-center">
+                    <ul class="flex flex-wrap justify-between w-full gap-[20px]">
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[48.5%] py-[40px] px-[40px] gap-[14px] color-four">
+                            <div class="font-semibold text-[34px]">YEAR - 2005</div>
+                            <div class="text-[14px]">In 2005, Damien acquired her first camera, igniting her passion for photography. She started experimenting with landscapes and candid shots, marking the beginning of her visual storytelling journey.</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[48.5%] py-[40px] px-[40px] gap-[14px] color-four">
+                            <div class="font-semibold text-[34px]">YEAR - 2005</div>
+                            <div class="text-[14px]">In 2005, Damien acquired her first camera, igniting her passion for photography. She started experimenting with landscapes and candid shots, marking the beginning of her visual storytelling journey.</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[48.5%] py-[40px] px-[40px] gap-[14px] color-four">
+                            <div class="font-semibold text-[34px]">YEAR - 2005</div>
+                            <div class="text-[14px]">In 2005, Damien acquired her first camera, igniting her passion for photography. She started experimenting with landscapes and candid shots, marking the beginning of her visual storytelling journey.</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[48.5%] py-[40px] px-[40px] gap-[14px] color-four">
+                            <div class="font-semibold text-[34px]">YEAR - 2005</div>
+                            <div class="text-[14px]">In 2005, Damien acquired her first camera, igniting her passion for photography. She started experimenting with landscapes and candid shots, marking the beginning of her visual storytelling journey.</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[48.5%] py-[40px] px-[40px] gap-[14px] color-four">
+                            <div class="font-semibold text-[34px]">YEAR - 2005</div>
+                            <div class="text-[14px]">In 2005, Damien acquired her first camera, igniting her passion for photography. She started experimenting with landscapes and candid shots, marking the beginning of her visual storytelling journey.</div>
+                        </li>
+                        <li class="flex flex-col bg-two border-[1px] border-gray-500/10 rounded-[12px] w-[48.5%] py-[40px] px-[40px] gap-[14px] color-four">
+                            <div class="font-semibold text-[34px]">YEAR - 2005</div>
+                            <div class="text-[14px]">In 2005, Damien acquired her first camera, igniting her passion for photography. She started experimenting with landscapes and candid shots, marking the beginning of her visual storytelling journey.</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- End Journey section -->
 
         <!-- Testimonials section -->
-        <section>
-            <div>
-                <div>
-                    <div>
-                        <div>TESTIMONIALS</div>
-                        <div>WHAT MY CLIENTS SAY</div>
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[60px]">
+                <div class="flex flex-col pb-[40px] border-b-[1px] border-gray-500/30">
+                    <div class="flex flex-col">
+                        <div class="text-[16px] font-semibold color-four">TESTIMONIALS</div>
+                        <div class="font-semibold text-[48px]">WHAT MY CLIENTS SAY</div>
                     </div>
-                    <div>
+                    <div class="flex flex-row justify-between items-center">
                         <div>
-                            <div>Total Reviews</div>
-                            <div>323</div>
+                            <div class="color-four text-[16px]">Total Reviews</div>
+                            <div class="text-[24px] font-medium">323</div>
                         </div>
-                        <div>
-                            <div>
-                                <div><</div>
-                                <div>></div>
+                        <div class="flex flex-row gap-[20px]">
+                            <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&lt;</div>
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&gt;</div>
                             </div>
-                            <div>View All Testimonials -></div>
+                            <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">View All Testimonials -></div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div>Emily Johnson</div>
-                                    <div>USA, California</div>
+                    <ul class="flex flex-row gap-[20px] justify-between">
+                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div>
+                                        <div class="font-medium text-[18px]">Emily Johnson</div>
+                                        <div class="text-[16px] color-four">USA, California</div>
+                                    </div>
+                                    <div class="flex flex-row gap-[8px] bg-primary h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/20 rounded-full">
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div>Facebook</div>
-                                    <div>X</div>
-                                    <div>LinkedIn</div>
+                                <div class="flex flex-row gap-[4px]">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
                                 </div>
-                            </div>
-                            <div>Stars</div>
-                        </div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus reiciendis illum neque saepe itaque vero. Nemo provident dolore sequi soluta pariatur voluptas. Non voluptas quaerat maxime, doloribus explicabo dicta.</div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div>Emily Johnson</div>
-                                    <div>USA, California</div>
-                                </div>
-                                <div>
-                                    <div>Facebook</div>
-                                    <div>X</div>
-                                    <div>LinkedIn</div>
+                                <div class="text-[18px]">
+                                    Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.
                                 </div>
                             </div>
-                            <div>Stars</div>
-                        </div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus reiciendis illum neque saepe itaque vero. Nemo provident dolore sequi soluta pariatur voluptas. Non voluptas quaerat maxime, doloribus explicabo dicta.</div>
-                    </div>
-                    <div>
-                        <div>
-                            <div>
-                                <div>
-                                    <div>Emily Johnson</div>
-                                    <div>USA, California</div>
+                        </li>
+                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div>
+                                        <div class="font-medium text-[18px]">Emily Johnson</div>
+                                        <div class="text-[16px] color-four">USA, California</div>
+                                    </div>
+                                    <div class="flex flex-row gap-[8px] bg-primary h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/20 rounded-full">
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div>Facebook</div>
-                                    <div>X</div>
-                                    <div>LinkedIn</div>
+                                <div class="flex flex-row gap-[4px]">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                </div>
+                                <div class="text-[18px]">
+                                    Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.
                                 </div>
                             </div>
-                            <div>Stars</div>
-                        </div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus reiciendis illum neque saepe itaque vero. Nemo provident dolore sequi soluta pariatur voluptas. Non voluptas quaerat maxime, doloribus explicabo dicta.</div>
-                    </div>
+                        </li>
+                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div>
+                                        <div class="font-medium text-[18px]">Emily Johnson</div>
+                                        <div class="text-[16px] color-four">USA, California</div>
+                                    </div>
+                                    <div class="flex flex-row gap-[8px] bg-primary h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/20 rounded-full">
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-[4px]">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                </div>
+                                <div class="text-[18px]">
+                                    Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- End Testimonials section -->
-        
+
         <!-- Footer section -->
-        <footer>
+        <footer class="absolute w-full">
             <div>
-                <div>
-                    <div>DAMIEN</div>
-                    <div>
-                        <ul>
-                            <li>EVENT PHOTOGRAPHY</li>
-                            <li>COMMERCIAL PHOTOGRAPHY</li>
-                            <li>PRODUCT PHOTOGRAPHY</li>
-                            <li>WEDDING PHOTOGRAPHY</li>
-                            <li>LANDSCAPE PHOTOGRAPHY</li>
-                            <li>BRANDING PHOTOGRAPHY</li>
-                            <li>PORTRAIT PHOTOGRAPHY</li>
+                <div class="relative w-full flex flex-col">
+                    <div class="text-[169px] font-bold opacity-10 pl-[900px]">DAMIEN</div>
+                    <div class="">
+                        <ul class="flex flex-row justify-between items-center bg-one py-[16px] border-y-[1px] border-gray-500/30">
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                EVENT PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                COMMERCIAL PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                PRODUCT PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                WEDDING PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                LANDSCAPE PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                BRANDING PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                PORTRAIT PHOTOGRAPHY
+                            </li>
                         </ul>
                     </div>
                 </div>                
                 <div>
-                    <div>
-                        <div>
-                            <div>A MORE MEANINGFUL HOME FOR PHOTOGRAPHY</div>
-                            <div>LET'S WORK TOGETHER</div>
+                    <div class="px-[80px] flex flex-row justify-center items-center ">
+                        <div class="px-[60px] py-[80px] h-[368px] border-x-[1px] border-gray-500/30 flex flex-col justify-between">
+                            <div class="font-semibold text-[16px] color-four">A MORE MEANINGFUL HOME FOR PHOTOGRAPHY</div>
+                            <div class="font-semibold text-[48px]">LET'S </div>
+                            <div class="font-semibold text-[48px] ">WORK TOGETHER</div>
                         </div>
-                        <div>
-                            <div>
-                                <div>HOME</div>
-                                <ul>
-                                    <li>ABOUT ME</li>
+                        <div class="flex flex-row justify-between w-[759px] px-[50px] py-[80px] border-r-[1px] border-gray-500/30 h-[368px]">
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">HOME</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
+                                    <li class="flex flex-col">
+                                        ABOUT ME
+                                    </li>
                                     <li>MY WORKS</li>
                                     <li>TESTIMONIALS</li>
                                 </ul>
                             </div>
-                            <div>CLIENTS</div>
-                                <ul>
-                                    <li>ABOUT ME</li>
-                                    <li>ABOUT ME</li>
-                                    <li>MY WORKS</li>
-                                    <li>TESTIMONIALS</li>
-                                </ul>
-                            </div>
-                            <div>PORTFOLIO</div>
-                                <ul>
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">CLIENTS</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
                                     <li>ABOUT ME</li>
                                     <li>ABOUT ME</li>
                                     <li>MY WORKS</li>
                                     <li>TESTIMONIALS</li>
                                 </ul>
                             </div>
-                            <div>SERVICES</div>
-                                <ul>
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">PORTFOLIO</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
+                                    <li>ABOUT ME</li>
+                                    <li>ABOUT ME</li>
+                                    <li>MY WORKS</li>
+                                    <li>TESTIMONIALS</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">SERVICES</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
                                     <li>ABOUT ME</li>
                                     <li>ABOUT ME</li>
                                     <li>MY WORKS</li>
@@ -262,18 +346,20 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="flex flex-row justify-between items-center h-[89px] px-[80px] border-t-[1px] border-gray-500/30">
+                        <div class="flex flex-row py-[34px] gap-[8px] text-[14px] color-four">
                             <div>Terms & Conditions</div>
                             <div>|</div>
                             <div>Privacy Policy</div>
                         </div>
-                        <div>
-                            <div>Facebook</div>
-                            <div>X</div>
-                            <div>LinkedIn</div>
+                        <div class="flex flex-row gap-[10px] h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full">
+                            <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                            <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                            <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
                         </div>
-                        <div>c 2024 Damien Braun Photography. All rights reserved</div>
+                        <div class="flex flex-row py-[34px] gap-[8px] text-[14px] color-four">
+                            &copy; 2024 Damien Braun Photography. All rights reserved
+                        </div>
                     </div>
                 </div>
             </div>
