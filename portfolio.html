@@ -3,24 +3,564 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photographer website - Portfolio</title>
+    <title>Photographer website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+        :root {
+            --font-primary: "Manrope";
+
+            --color-primary: #070708;
+            --color-one: #1c1c21; /* Dark 03 */
+            --color-two: #0e0e10; /* Dark 06 */
+            --color-three: #2f2f32;
+            --color-four: #797c86; /* Gray 07 */
+
+        }
+
+        body {
+            font-family: var(--font-primary);
+            font-weight: medium;
+        }
+
+        .bg-primary {background-color: var(--color-primary);}
+        .bg-one {background-color: var(--color-one);}
+        .bg-two {background-color: var(--color-two);}
+        .bg-three {background-color: var(--color-three);}
+        .bg-four {background-color: var(--color-four);}
+
+        .color-one {color: var(--color-one);}
+        .color-two {color: var(--color-two);}
+        .color-three {color: var(--color-three);}
+        .color-four {color: var(--color-four);}
+
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="text-white font-light bg-primary">
     <main>
-        <header>
-            <nav>
-                <div>DAMIEN</div>
-                <div>
-                    <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Portfolio</li>
-                        <li>Services</li>
-                    </ul>
+        <header class="px-[62px]">
+            <nav class="flex flex-row justify-between items-center border-gray-500/50 border-x-[1px] px-[18px]">
+                <div class="text-white font-bold text-[22px]">DAMIEN</div>
+                <ul class="flex flex-row pt-[20px]">
+                    <li class="rounded-tl-lg border-l-[1px] border-t-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium color-four">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="border-x-[1px] border-gray-500/50  border-t-[1px] w-[119px] h-[69px] text-[18px] flex justify-center items-center  color-four font-medium">
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li class="border-r-[1px]  border-t-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium bg-gray-50/5 ">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="rounded-tr-lg border-t-[1px]  border-r-[1px] border-gray-500/50 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium color-four">
+                        <a href="services.html">Services</a>
+                    </li>
+                </ul>
+                <div class="flex justify-center items-center w-[118px] h-[49px] border-[1px] border-gray-500/50 bg-gray-50/10 rounded-lg font-medium">
+                    <a href="contact.html">Contact Me</a>
                 </div>
-                <div>Contact Me</div>
             </nav>
         </header>
+        
+        <!-- Portfolio section -->
+        <section class="border-t-[1px] border-gray-500/50 px-[80px] mb-[150px] pt-[100px]">
+            <div class="flex flex-col">
+                <div class="pb-[40px] flex flex-row justify-between items-center">
+                    <div class="flex flex-col justify-start">
+                        <div class="text-[16px] color-four font-semibold">ABOUT</div>
+                        <div class="text-[48px] font-semibold">ABOUT DAMIEN BRAUN</div>
+                    </div>
+                    <div class="w-[130px] h-[49px] bg-three flex justify-center items-center rounded-lg">
+
+                    </div>
+                </div>
+                <div class="flex flex-col py-[80px] gap-4 border-b-[1px] border-gray-500/50">
+                    <div class="px-[80px] flex justify-center items-center h-[424px]">
+                        <img src="images/Images Container.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio section -->
+
+        <!-- Portraits section -->
+        <section class="px-[80px] mb-[150px] ">
+            <div class="flex flex-col gap-[60px] border-b-[1px] border-gray-500/30 pb-[80px]">
+                <div class="flex flex-row justify-between items-center border-b-[1px] border-gray-500/30 pb-[40px]">
+                    <div class="flex flex-col">
+                        <div class="text-[34px] font-semibold color-four">PORTRAITS PHOTOGRAPHY</div>
+                    </div>
+                    <div class="flex flex-row gap-[20px]">
+                        <div class="flex flex-row gap-[20px]">
+                            <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] flex justify-center items-center text-[28px]">&lt;</div>
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] flex justify-center items-center text-[28px]">&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap justify-between gap-[30px]">
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (4).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (2).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (3).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Portraits section -->
+
+        <!-- Event section -->
+        <section class="px-[80px] mb-[150px] ">
+            <div class="flex flex-col gap-[60px] border-b-[1px] border-gray-500/30 pb-[80px]">
+                <div class="flex flex-row justify-between items-center border-b-[1px] border-gray-500/30 pb-[40px]">
+                    <div class="flex flex-col">
+                        <div class="text-[34px] font-semibold color-four">EVENT PHOTOGRAPHY</div>
+                    </div>
+                    <div class="flex flex-row gap-[20px]">
+                        <div class="flex flex-row gap-[20px]">
+                            <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] flex justify-center items-center text-[28px]">&lt;</div>
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] flex justify-center items-center text-[28px]">&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap justify-between gap-[30px]">
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (4).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (2).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (3).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Event section -->
+
+        <!-- Commercial section -->
+        <section class="px-[80px] mb-[150px] ">
+            <div class="flex flex-col gap-[60px] pb-[80px]">
+                <div class="flex flex-row justify-between items-center border-b-[1px] border-gray-500/30 pb-[40px]">
+                    <div class="flex flex-col">
+                        <div class="text-[34px] font-semibold color-four">COMMERCIAL PHOTOGRAPHY</div>
+                    </div>
+                    <div class="flex flex-row gap-[20px]">
+                        <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                            <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] flex justify-center items-center text-[28px]">&lt;</div>
+                            <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] flex justify-center items-center text-[28px]">&gt;</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-wrap justify-between gap-[30px]">
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (4).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (2).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                        <li class="flex flex-col gap-[19px]">
+                            <div class="w-[406.33px] h-[428px] rounded-xl flex justify-center items-center">
+                                <img src="images/Image (3).png" alt="">
+                            </div>
+                            <div class="flex flex-row justify-between w-full">
+                                <div class="flex flex-col gap-[4px]">
+                                    <div class="font-medium text-[18px]">Faces of Resilience</div>
+                                    <div class="text-[16px]">March 2022</div>
+                                </div>
+                                <div class="font-medium text-[14px]">VIEW PROJECT -></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Commercial section -->
+        
+        <!-- FAQ section -->
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[60px]">
+                <div class="flex flex-row justify-between items-center pb-[40px]">
+                    <div class="flex flex-col">
+                        <div class="text-[16px] font-semibold color-four">FAQ'S</div>
+                        <div class="font-semibold text-[48px]">FREQUENTLY ASKED QUESTIONS</div>
+                    </div>
+                </div>
+                <div class="flex flex-row border-t-[1px] border-gray-500/30 ">
+                    <div class="w-1/2 border-r-[1px] border-gray-500/30 flex flex-col justify-between h-[523px]">
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                    <div class="text-[16px] w-3/4">I specialize in [Portrait, Landscape, Event, etc.] photography, capturing moments that tell unique stories.</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_up.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2 h-[523px] flex flex-col justify-between">
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="border-b-[1px] border-gray-500/30">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="flex flex-row justify-between items-center px-[40px] py-[24px] gap-[30px]">
+                                <div class="flex flex-col gap-[20px]">
+                                    <div class="text-[18px] font-semibold">WHAT TYPE OF PHOTOGRAPHY DO YOU SPECIALIZED IN?</div>
+                                </div>
+                                <div class="border-[1px] border-gray-500/30 h-[40px] w-[40px] rounded-full flex justify-center items-center"><img src="icons/arrow_down.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ section -->
+
+        <!-- Testimonials section -->
+        <section class="px-[80px] mb-[150px]">
+            <div class="flex flex-col gap-[60px]">
+                <div class="flex flex-col pb-[40px] border-b-[1px] border-gray-500/30">
+                    <div class="flex flex-col">
+                        <div class="text-[16px] font-semibold color-four">TESTIMONIALS</div>
+                        <div class="font-semibold text-[48px]">WHAT MY CLIENTS SAY</div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center">
+                        <div>
+                            <div class="color-four text-[16px]">Total Reviews</div>
+                            <div class="text-[24px] font-medium">323</div>
+                        </div>
+                        <div class="flex flex-row gap-[20px]">
+                            <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&lt;</div>
+                                <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&gt;</div>
+                            </div>
+                            <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">View All Testimonials -></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex flex-row gap-[20px] justify-between">
+                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div>
+                                        <div class="font-medium text-[18px]">Emily Johnson</div>
+                                        <div class="text-[16px] color-four">USA, California</div>
+                                    </div>
+                                    <div class="flex flex-row gap-[8px] bg-primary h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/20 rounded-full">
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-[4px]">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                </div>
+                                <div class="text-[18px]">
+                                    Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div>
+                                        <div class="font-medium text-[18px]">Emily Johnson</div>
+                                        <div class="text-[16px] color-four">USA, California</div>
+                                    </div>
+                                    <div class="flex flex-row gap-[8px] bg-primary h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/20 rounded-full">
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-[4px]">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                </div>
+                                <div class="text-[18px]">
+                                    Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div class="flex flex-row justify-between items-center">
+                                    <div>
+                                        <div class="font-medium text-[18px]">Emily Johnson</div>
+                                        <div class="text-[16px] color-four">USA, California</div>
+                                    </div>
+                                    <div class="flex flex-row gap-[8px] bg-primary h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/20 rounded-full">
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                                        <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-[4px]">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                    <img src="icons/star.svg" alt="">
+                                </div>
+                                <div class="text-[18px]">
+                                    Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials section -->
+
+        <!-- Footer section -->
+        <footer class="absolute w-full">
+            <div>
+                <div class="relative w-full flex flex-col">
+                    <div class="text-[169px] font-bold opacity-10 pl-[900px]">DAMIEN</div>
+                    <div class="">
+                        <ul class="flex flex-row justify-between items-center bg-one py-[16px] border-y-[1px] border-gray-500/30">
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                EVENT PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                COMMERCIAL PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                PRODUCT PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                WEDDING PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                LANDSCAPE PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                BRANDING PHOTOGRAPHY
+                            </li>
+                            <li class="flex flex-row gap-[6px] items-center">
+                                <img src="icons/star_vector.svg" alt="" width="30" height="30">
+                                PORTRAIT PHOTOGRAPHY
+                            </li>
+                        </ul>
+                    </div>
+                </div>                
+                <div>
+                    <div class="px-[80px] flex flex-row justify-center items-center ">
+                        <div class="px-[60px] py-[80px] h-[368px] border-x-[1px] border-gray-500/30 flex flex-col justify-between">
+                            <div class="font-semibold text-[16px] color-four">A MORE MEANINGFUL HOME FOR PHOTOGRAPHY</div>
+                            <div class="font-semibold text-[48px]">LET'S </div>
+                            <div class="font-semibold text-[48px] ">WORK TOGETHER</div>
+                        </div>
+                        <div class="flex flex-row justify-between w-[759px] px-[50px] py-[80px] border-r-[1px] border-gray-500/30 h-[368px]">
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">HOME</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
+                                    <li class="flex flex-col">
+                                        ABOUT ME
+                                    </li>
+                                    <li>MY WORKS</li>
+                                    <li>TESTIMONIALS</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">CLIENTS</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
+                                    <li>ABOUT ME</li>
+                                    <li>ABOUT ME</li>
+                                    <li>MY WORKS</li>
+                                    <li>TESTIMONIALS</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">PORTFOLIO</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
+                                    <li>ABOUT ME</li>
+                                    <li>ABOUT ME</li>
+                                    <li>MY WORKS</li>
+                                    <li>TESTIMONIALS</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-col gap-[16px]">
+                                <div class="text-[14px] font-semibold color-four">SERVICES</div>
+                                <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
+                                    <li>ABOUT ME</li>
+                                    <li>ABOUT ME</li>
+                                    <li>MY WORKS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center h-[89px] px-[80px] border-t-[1px] border-gray-500/30">
+                        <div class="flex flex-row py-[34px] gap-[8px] text-[14px] color-four">
+                            <div>Terms & Conditions</div>
+                            <div>|</div>
+                            <div>Privacy Policy</div>
+                        </div>
+                        <div class="flex flex-row gap-[10px] h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full">
+                            <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
+                            <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
+                            <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
+                        </div>
+                        <div class="flex flex-row py-[34px] gap-[8px] text-[14px] color-four">
+                            &copy; 2024 Damien Braun Photography. All rights reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer section -->
     </main>
 </body>
 </html>

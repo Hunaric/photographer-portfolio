@@ -39,10 +39,10 @@
 </head>
 <body class="text-white font-light bg-primary">
     <main>
-        <header class="px-[62px]">
-            <nav class="flex flex-row justify-between items-center border-gray-500/50 border-x-[1px] px-[18px]">
+        <header class="px-[62px] max-md:px-[16px]">
+            <nav class="flex flex-row justify-between items-center border-gray-500/50 border-x-[1px] px-[18px] max-md:pt-[40px]">
                 <div class="text-white font-bold text-[22px]">DAMIEN</div>
-                <ul class="flex flex-row pt-[20px]">
+                <ul class="flex flex-row pt-[20px] max-md:hidden">
                     <li class="rounded-tl-lg border-l-[1px] border-t-[1px] border-gray-500/50 bg-gray-50/5 w-[119px] h-[69px] text-[18px] flex justify-center items-center font-medium">
                         <a href="index.html">Home</a>
                     </li>
@@ -56,32 +56,32 @@
                         <a href="services.html">Services</a>
                     </li>
                 </ul>
-                <div class="flex justify-center items-center w-[118px] h-[49px] border-[1px] border-gray-500/50 bg-gray-50/10 rounded-lg font-medium">
+                <div class="flex justify-center items-center w-[118px] h-[49px] border-[1px] border-gray-500/50 bg-gray-50/10 rounded-lg font-medium max-md:hidden">
                     <a href="contact.html">Contact Me</a>
                 </div>
             </nav>
         </header>
         
         <!-- Hero section -->
-        <section class="border-t-[1px] border-gray-500/50 mb-[150px]">
+        <section class="border-t-[1px] border-gray-500/50 mb-[150px] max-md:mb-[80px]">
             <div class="flex flex-col">
-                <div class="flex flex-row relative justify-between px-[80px] items-center">
-                    <div class="h-full">
-                        <div class="text-[25px]">STUNNING PHOTOGRAPY BY</div>
-                        <div class="font-bold text-[82px]">DAMIEN BRAUN</div>
+                <div class="flex flex-row max-md:flex-col relative justify-between max-md:justify-start px-[80px] max-md:px-[16px] max-md:py-[40px] max-md:gap-[20px] items-center max-md:items-start">
+                    <div class="h-full max-md:h-[78px]">
+                        <div class="text-[25px] max-md:text-[14px] color-four">STUNNING PHOTOGRAPY BY</div>
+                        <div class="font-bold text-[82px] max-md:font-semibold max-md:text-[40px]">DAMIEN BRAUN</div>
                     </div>
-                    <div class=" h-full">
+                    <div class="max-md:hidden h-full">
                         <img src="icons/x_vector.svg" alt="">
                     </div>
                     <div class="h-full">
-                        <div class="text-[66px] gap-4">LET'S 
+                        <div class="text-[66px] font-semibold max-md:text-[28px] gap-4">LET'S 
                             <p>WORK TOGETHER</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col border-t-[1px] border-gray-500/30">
                     <div>
-                        <ul class="flex flex-row justify-between items-center bg-one py-[16px]">
+                        <ul class="flex flex-row overflow-x-auto scrollbar-hide justify-between items-center bg-one py-[16px] gap-[16px] space-x-4 whitespace-nowrap">
                             <li class="flex flex-row gap-[6px] items-center">
                                 <img src="icons/star_vector.svg" alt="" width="30" height="30">
                                 EVENT PHOTOGRAPHY
@@ -112,8 +112,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="px-[80px] flex justify-center items-center h-[424px]">
-                        <img src="images/Images Container.png" alt="">
+                    <div class="px-[80px] max-md:px-[16px] flex justify-center items-center h-[424px] max-md:h-[223px]">
+                        <img src="images/Images Container.png" alt="" class="max-md:hidden">
+                        <img src="images/Images Container (1).png" alt="" class="max-md:block hidden">
                     </div>
                 </div>
             </div>
@@ -121,11 +122,11 @@
         <!-- End Hero section -->
 
         <!-- About section -->
-        <section class="px-[80px] mb-[150px]">
-            <div class="flex flex-col gap-[50px]">
+        <section class="px-[80px] max-md:px-[16px] mb-[150px] max-md:mb-[80px]">
+            <div class="flex flex-col gap-[50px] max-md:gap-[40px]">
                 <div class="pb-[40px] flex flex-row justify-between items-center border-b-[1px] border-gray-500/30">
                     <div class="flex flex-col justify-start">
-                        <div class="text-[16px] color-four font-semibold">ABOUT</div>
+                        <div class="text-[16px] max-md:text-[14px] color-four font-semibold">ABOUT</div>
                         <div class="text-[48px] font-semibold">I AM DAMIEN</div>
                     </div>
                     <div class="w-[130px] h-[49px] bg-three flex justify-center items-center rounded-lg">Know More -></div>
