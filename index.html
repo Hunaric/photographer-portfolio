@@ -254,7 +254,7 @@
                         <div class="w-[174px] h-[49px] border-[1px] border-gray-500/30 bg-three rounded-lg flex justify-center items-center">View All Works -></div>
                     </div>
                 </div>
-                <div class="max-md:overflow-x-auto scrollbar-hide">
+                <div class="max-md:overflow-x-auto scrollbar-hide max-md:w-full max-md:max-w-full">
                     <ul class="flex max-md:flex-row max-md:overflow-x-auto scrollbar-hide max-md:space-x-4 justify-between max-md:justify-start gap-[30px]">
                         <li class="flex flex-col gap-[19px] max-md:w-full max-md:h-auto">
                             <div class="w-[406.33px] max-md:w-[358px] h-[428px] max-md:h-auto rounded-xl flex justify-center items-center">
@@ -423,13 +423,13 @@
                         <div class="text-[16px] font-semibold color-four">TESTIMONIALS</div>
                         <div class="font-semibold text-[48px]">WHAT MY CLIENTS SAY</div>
                     </div>
-                    <div class="flex flex-row justify-between items-center">
+                    <div class="flex flex-row max-md:flex-col justify-between max-md:justify-start items-center max-md:items-start">
                         <div>
                             <div class="color-four text-[16px]">Total Reviews</div>
                             <div class="text-[24px] font-medium">323</div>
                         </div>
                         <div class="flex flex-row gap-[20px]">
-                            <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center">
+                            <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center max-md:hidden">
                                 <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&lt;</div>
                                 <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[28px] w-[28px] flex justify-center items-center">&gt;</div>
                             </div>
@@ -437,9 +437,9 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <ul class="flex flex-row gap-[20px] justify-between">
-                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                <div class="max-md:overflow-x-auto scrollbar-hide max-md:w-full max-md:max-w-full">
+                    <ul class="flex flex-row gap-[20px] justify-between max-md:justify-start max-md:overflow-x-auto scrollbar-hide max-md:space-x-4">
+                        <li class="px-[30px] max-md:px-[24px] py-[30px] max-md:py-[24px] max-md:gap-[20px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] max-md:w-full h-[263px] max-md:h-auto">
                             <div class="flex flex-col gap-[24px]">
                                 <div class="flex flex-row justify-between items-center">
                                     <div>
@@ -464,7 +464,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                        <li class="px-[30px] max-md:px-[24px] py-[30px] max-md:py-[24px] max-md:gap-[20px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] max-md:w-full h-[263px] max-md:h-auto">
                             <div class="flex flex-col gap-[24px]">
                                 <div class="flex flex-row justify-between items-center">
                                     <div>
@@ -489,7 +489,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="px-[30px] py-[30px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] h-[263px]">
+                        <li class="px-[30px] max-md:px-[24px] py-[30px] max-md:py-[24px] max-md:gap-[20px] bg-two border-[1px] border-gray-500/30 rounded-[10px] w-[408.33px] max-md:w-full h-[263px] max-md:h-auto">
                             <div class="flex flex-col gap-[24px]">
                                 <div class="flex flex-row justify-between items-center">
                                     <div>
@@ -516,17 +516,24 @@
                         </li>
                     </ul>
                 </div>
+                 
+                <div class="hidden max-md:block max-md:order-3">
+                    <div class=" flex flex-row px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full gap-[12px] justify-center items-center w-[124px] h-[64px]">
+                        <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] text-[28px] flex justify-center items-center">&lt;</div>
+                        <div class="bg-three rounded-full border-[1px] border-gray-500/30 h-[48px] w-[48px] text-[28px] flex justify-center items-center">&gt;</div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End Testimonials section -->
 
         <!-- Footer section -->
         <footer class="absolute w-full">
-            <div>
+            <div class="max-md:pb-[20px]">
                 <div class="relative w-full flex flex-col">
-                    <div class="text-[169px] font-bold opacity-10 pl-[900px]">DAMIEN</div>
+                    <div class="text-[169px] max-md:text-[63px] font-bold opacity-10 pl-[900px] max-md:pl-[130px]">DAMIEN</div>
                     <div class="">
-                        <ul class="flex flex-row justify-between items-center bg-one py-[16px] border-y-[1px] border-gray-500/30">
+                        <ul class="flex flex-row max-md:overflow-x-auto scrollbar-hide justify-between items-center bg-one py-[16px] gap-[16px] space-x-4 whitespace-nowrap">
                             <li class="flex flex-row gap-[6px] items-center">
                                 <img src="icons/star_vector.svg" alt="" width="30" height="30">
                                 EVENT PHOTOGRAPHY
@@ -559,13 +566,13 @@
                     </div>
                 </div>                
                 <div>
-                    <div class="px-[80px] flex flex-row justify-center items-center ">
-                        <div class="px-[60px] py-[80px] h-[368px] border-x-[1px] border-gray-500/30 flex flex-col justify-between">
-                            <div class="font-semibold text-[16px] color-four">A MORE MEANINGFUL HOME FOR PHOTOGRAPHY</div>
-                            <div class="font-semibold text-[48px]">LET'S </div>
-                            <div class="font-semibold text-[48px] ">WORK TOGETHER</div>
+                    <div class="px-[80px] max-md:px-[16px] flex flex-row max-md:flex-col justify-center items-center max-md:justify-start max-md:items-start">
+                        <div class="px-[60px] max-md:px-[20px] py-[80px] max-md:py-[40px] h-[368px] max-md:h-auto border-x-[1px] border-gray-500/30 flex flex-col justify-between">
+                            <div class="font-semibold text-[16px] max-md:text-[14px] color-four">A MORE MEANINGFUL HOME FOR PHOTOGRAPHY</div>
+                            <div class="font-semibold text-[48px] max-md:text-[28px]">LET'S </div>
+                            <div class="font-semibold text-[48px] max-md:text-[28px]">WORK TOGETHER</div>
                         </div>
-                        <div class="flex flex-row justify-between w-[759px] px-[50px] py-[80px] border-r-[1px] border-gray-500/30 h-[368px]">
+                        <div class="flex flex-row max-md:flex-wrap justify-between max-md:justify-center w-[759px] max-md:w-full px-[50px] max-md:px-[20px] py-[80px] max-md:py-[40px] border-r-[1px] max-md:border-l-[1px] max-md:border-t-[1px] border-gray-500/30 h-[368px] max-md:h-auto max-md:gap-[50px]">
                             <div class="flex flex-col gap-[16px]">
                                 <div class="text-[14px] font-semibold color-four">HOME</div>
                                 <ul class="flex flex-col gap-[14px] text-[14px] font-medium  underline underline-offset-[10px] " style="text-decoration-color: rgba(255, 255, 255, 0.3);">
@@ -604,18 +611,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row justify-between items-center h-[89px] px-[80px] border-t-[1px] border-gray-500/30">
-                        <div class="flex flex-row py-[34px] gap-[8px] text-[14px] color-four">
+                    <div class="flex flex-row max-md:flex-col max-md:order-1 justify-between items-center h-[89px] px-[80px] max-md:px-[16px] border-t-[1px] border-gray-500/30 max-md:gap-[16px]">
+                        <div class="flex flex-row py-[34px] max-md:py-0 max-md:pt-[20px] gap-[8px] text-[14px] color-four">
                             <div>Terms & Conditions</div>
                             <div>|</div>
                             <div>Privacy Policy</div>
                         </div>
-                        <div class="flex flex-row gap-[10px] h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full">
+                        <div class="flex flex-row gap-[10px] h-[56px] px-[8px] py-[8px] border-[1px] border-gray-500/30 rounded-full max-md:order-3">
                             <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/facebook.svg" alt=""></div>
                             <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/twitter.svg" alt=""></div>
                             <div class="w-[40px] h-[40px] rounded-full border-[1px] border-gray-500/30 flex justify-center bg-one items-center"><img src="icons/linkedin.svg" alt=""></div>
                         </div>
-                        <div class="flex flex-row py-[34px] gap-[8px] text-[14px] color-four">
+                        <div class="flex flex-row py-[34px] max-md:py-0 gap-[8px] text-[14px] color-four max-md:order-2">
                             &copy; 2024 Damien Braun Photography. All rights reserved
                         </div>
                     </div>
